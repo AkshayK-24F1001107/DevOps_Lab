@@ -1,0 +1,12 @@
+---
+- name: Ansible with one module
+  hosts: local
+  gather_facts: no
+  tasks:
+   - name: Welcome friends
+     first_module:
+       name: "students, you have completed the 7th program"
+     register: result
+   - name: Morning Run
+     debug:
+       msg: "{{result.message}}"

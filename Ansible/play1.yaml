@@ -1,0 +1,14 @@
+- name: My first playbook
+  hosts: local
+  connection: local
+  tasks:
+    - name: My first task
+      debug:
+       msg: "Ansible is a config management tool"
+    - name: My second task
+      debug:
+       msg: "This is my second task"
+    - name: My third task
+      debug:
+       msg: "This is my third task"
+ 
